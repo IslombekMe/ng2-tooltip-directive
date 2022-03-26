@@ -1,3 +1,6 @@
+
+**Note: I am not the author of this project, see their [official repository].(https://github.com/drozhzhin-n-e/ng2-tooltip-directive). The author doesn't seem to maintain its project anymore, so I'm just fixing stuff to update to new angular versions.**
+
 # Tooltip for Angular
 
 [![Build Status](https://travis-ci.org/drozhzhin-n-e/ng2-tooltip-directive.svg?branch=master)](https://travis-ci.org/drozhzhin-n-e/ng2-tooltip-directive) <img src="https://badgen.net/bundlephobia/min/ng2-tooltip-directive" />
