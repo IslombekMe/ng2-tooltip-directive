@@ -9,17 +9,17 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "lib:dev": "ng build ng2-tooltip-directive --watch",
-    "lib:build": "ng build ng2-tooltip-directive"
+    "lib:build": "ng build ng2-tooltip-directive --configuration production"
   },
   "dependencies": {
-    "@angular/animations": "~13.2.3",
-    "@angular/common": "~13.2.3",
-    "@angular/compiler": "~13.2.3",
-    "@angular/core": "~13.2.3",
-    "@angular/forms": "~13.2.3",
-    "@angular/platform-browser": "~13.2.3",
-    "@angular/platform-browser-dynamic": "~13.2.3",
-    "@angular/router": "~13.2.3",
+    "@angular/animations": "^13.2.3",
+    "@angular/common": "^13.2.3",
+    "@angular/compiler": "^13.2.3",
+    "@angular/core": "^13.2.3",
+    "@angular/forms": "^13.2.3",
+    "@angular/platform-browser": "^13.2.3",
+    "@angular/platform-browser-dynamic": "^13.2.3",
+    "@angular/router": "^13.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.2.4",
     "@angular/cli": "~13.2.4",
-    "@angular/compiler-cli": "~13.2.3",
+    "@angular/compiler-cli": "^13.2.3",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~3.7.0",
