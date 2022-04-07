@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, Input, ComponentFactoryResolver, EmbeddedViewRef, ApplicationRef, Injector, ComponentRef, OnInit, Output, EventEmitter, OnDestroy, Inject, Optional, SimpleChanges } from '@angular/core';
+import { Directive, ElementRef, HostListener, Input, ComponentFactoryResolver, EmbeddedViewRef, ApplicationRef, Injector, ComponentRef, OnInit, Output, EventEmitter, OnDestroy, Inject, Optional, SimpleChanges, TemplateRef } from '@angular/core';
 import { TooltipComponent } from './tooltip.component';
 import { TooltipOptionsService } from './options.service';
 import { defaultOptions, backwardCompatibilityOptions } from './options';
@@ -47,7 +47,7 @@ export class TooltipDirective {
         return this._options;
     }
 
-    @Input('tooltip') tooltipValue!: string;
+    @Input('tooltip') tooltipValue!: string | TemplateRef<any>;
     @Input('placement') placement!: string;
     @Input('autoPlacement') autoPlacement!: boolean;
 
