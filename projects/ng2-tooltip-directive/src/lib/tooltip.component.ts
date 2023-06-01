@@ -1,4 +1,4 @@
-import {Component, ElementRef, HostListener, HostBinding, Input, OnInit, EventEmitter, Renderer2} from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostBinding, HostListener, Input, Renderer2 } from '@angular/core';
 
 @Component({
     selector: 'tooltip',
@@ -33,6 +33,24 @@ export class TooltipComponent {
                 type: 'shown'
             });
         }
+    }
+
+    @HostListener('focusin')
+    @HostListener('mouseenter')
+    onMouseEnter() {
+        if (this.hostStylePointerEvents === 'none') {
+            return;
+        }
+        this.events.emit({type: 'mouseenter'});
+    }
+
+    @HostListener('focusout')
+    @HostListener('mouseleave')
+    onMouseLeave() {
+        if (this.hostStylePointerEvents === 'none') {
+            return;
+        }
+        this.events.emit({type: 'mouseleave'});
     }
 
     @Input() set show(value: boolean) {
