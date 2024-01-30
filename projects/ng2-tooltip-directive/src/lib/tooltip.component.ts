@@ -15,6 +15,7 @@ export class TooltipComponent {
 
     @Input() data: any;
 
+    @HostBinding('style.margin-left') hostStyleMarginLeft: string = "-200px";
     @HostBinding('style.top') hostStyleTop!: string;
     @HostBinding('style.left') hostStyleLeft!: string;
     @HostBinding('style.z-index') hostStyleZIndex!: number;
@@ -55,6 +56,7 @@ export class TooltipComponent {
 
     @Input() set show(value: boolean) {
         if (value) {
+            this.hostStyleMarginLeft = "unset";
             this.setPosition();
         }
         this._show = this.hostClassShow = value;
