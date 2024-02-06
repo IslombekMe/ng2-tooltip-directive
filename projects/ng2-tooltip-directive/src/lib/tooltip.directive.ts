@@ -477,9 +477,8 @@ export class TooltipDirective {
         }
 
         if (event.type === 'mouseenter') {
-            if (this.destroyTimeoutId) {
-                clearTimeout(this.destroyTimeoutId);
-            }
+            if (this.hideTimeoutId) clearTimeout(this.hideTimeoutId);
+            if (this.destroyTimeoutId) clearTimeout(this.destroyTimeoutId);
         }
 
         if (event.type === 'mouseleave') {
