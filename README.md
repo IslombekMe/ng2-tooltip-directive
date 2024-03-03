@@ -1,14 +1,17 @@
-**Note: I am not the author of this project, see their [official repository].(https://github.com/drozhzhin-n-e/ng2-tooltip-directive). The author doesn't seem to maintain its project anymore, so I'm just fixing stuff to update to new angular versions.**
+**Note: I am not the author of this project, see their [original repository](https://github.com/drozhzhin-n-e/ng2-tooltip-directive). The author doesn't seem to maintain its project anymore, so I'm taking over optimizing code and updating to newest Angular versions.**
 
 # Tooltip for Angular
 
 [![Build Status](https://travis-ci.org/drozhzhin-n-e/ng2-tooltip-directive.svg?branch=master)](https://travis-ci.org/drozhzhin-n-e/ng2-tooltip-directive) <img src="https://badgen.net/bundlephobia/min/ng2-tooltip-directive" />
 
-The tooltip is a pop-up tip that appears when you hover over an item or click on it.
+The tooltip is a pop-up tip that appears when you hover over an item or click on it. 
 
-# Supported Angular versions
+# Supported Angular versions and optimizations
 
-This version of the library support Angular version 15 and up.
+This version of the library support Angular version 14 and up and also:
+* tooltip doesn't go away when hovered upon;
+* adds many bug fixes and optimizations.
+
 
 ## Installation
 
